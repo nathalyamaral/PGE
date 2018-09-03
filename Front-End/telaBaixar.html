@@ -1,0 +1,930 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  if (typeof(dataLayer) === 'undefined') {
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NC7PZ37');
+}
+</script>
+
+<script>
+var diffTime = ( new Date() - 1535917012837.557)
+</script>
+<meta content='text/html; charset=utf-8' http-equiv='content-type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1d9d0dd4d2","applicationID":"2416771","transactionName":"cAxXFUYKXwhdRUwWUVgKZhFVAlYXF1kGFg==","queueTime":0,"applicationTime":828,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAYDUFNQGwEEVVdVAAA="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta charset='UTF-8'>
+<meta content='pt' http-equiv='content-language'>
+<meta content='pt' http-equiv='language' name='language'>
+<meta content='noindex,nofollow' name='robots'>
+
+
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+<title>PGE</title>
+<link href='/opensearch.xml' rel='search' title='Artia' type='application/opensearchdescription+xml'>
+<link rel="stylesheet" media="screen, print" href="https://assets.artia.com/assets/boot-24b8d8c083a1c24f185cc85d5102cb46ce30bec535f8205289bcf0d9207432df.css" />
+<link rel="stylesheet" media="screen, print" href="https://assets.artia.com/assets/artia/theme-ff8ae5065c8674070d64dfca6f7e457e21b5c8393069c7cdbf5b4488949a6780.css" />
+<link rel="stylesheet" media="screen, print" href="https://assets.artia.com/assets/application_boot-7c230e540c9efcdc8cd70210b245745e367bad8699822bcbd9ff4eb054f1a423.css" />
+<link rel="stylesheet" media="print" href="https://assets.artia.com/assets/artia/print-e59ebb91356064dd4a23bb6f6786a5d8eb18acef038d73344787a85d22305dce.css" />
+<!--[if lt IE 9]>
+<script src="https://assets.artia.com/assets/lib/html5shiv.min-f2a1497661bb1a42d8e76174a71003464d23db19b3eeab9656e55929e4baa381.js"></script>
+<script src="https://assets.artia.com/assets/lib/respond.min-43cb4ccdea9f28bdf449e25fedc9e831efb57d0e0d385b35c4f75ab44c4c93f2.js"></script>
+<![endif]-->
+<script src="https://assets.artia.com/assets/application-459bd34dc7845f166035d8e1b00b33db96caba3231f29f8e361043b5d95a717a.js"></script>
+<script>
+$(document).ready(function(){ artiaOrigin.setOrigin(""); })
+Artia.env = "production";
+ehnoisApplication.setLocale("pt");
+show_type = 'list'
+</script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="zqDKZTB4fAlQtU9cjYKKFMI3LP/xsBr9GzfjXq5BucI/hT+fjqiUFwVjSKLYLA73yBXr/HrKye2hb5wiouLD6A==" />
+
+
+<style>
+.field_value:empty:before{content: "em branco"}
+</style>
+</head>
+<body class='chrome cn-wiki_pages fixed linux new sidebar-collapse skin-black' mobile=''>
+  <noscript>
+    <iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-NC7PZ37' style='display:none;visibility:hidden' width='0'></iframe>
+  </noscript>
+
+  <div aria-labelledby='#artia-modal-title' class='modal fade2' id='artia-modal' role='dialog'>
+    <div class='modal-dialog' role='document'>
+      <div class='modal-content'>
+        <div class='modal-header' id='artia-modal-header' style='display:none;'>
+          <button aria-label='Fechar' class='close' data-dismiss='modal' type='button'>
+            <span aria-hidden='true' title='Fechar'>
+              &times
+            </span>
+          </button>
+          <h4 id='artia-modal-title'></h4>
+        </div>
+        <div class='modal-body' id='artia-modal-body'>
+          <div class='text-center'>
+            <img src="https://assets.artia.com/assets/loading-4f4ef83adff4b34a9c15fd60c0f65673d85960f2ac91eea380233f88b1811375.gif" alt="Loading" />
+          </div>
+        </div>
+        <div class='modal-footer' id='artia-modal-footer' style='display:none;'></div>
+      </div>
+    </div>
+  </div>
+
+  <div aria-labelledby='#artia-menu-title' class='modal' id='artia-menu' role='dialog' tabindex='-1'>
+    <div class='modal-dialog modal-sm' role='document'>
+      <div class='modal-content'>
+        <div class='modal-body' id='artia-menu-body'></div>
+        <div class='visible-lg' style='width:1px;height:1px;float:right'></div>
+        <div class='visible-md' style='width:1px;height:1px;float:right'></div>
+        <div class='visible-sm' style='width:1px;height:1px;float:right'></div>
+        <div class='visible-xs' style='width:1px;height:1px;float:right'></div>
+      </div>
+    </div>
+  </div>
+
+  <div class='full-loader'></div>
+  <div class='loader-message'>
+    Carregando...
+  </div>
+  <div id='fix_bug_select' style='position:fixed;top:0px;left:0px;width:5px;height:5px;z-index:9999;'></div>
+
+
+  <!-- Site wrapper -->
+  <div class='wrapper'>
+    <div id='client_logo'>
+      <img src="https://assets.artia.com/assets/logo_login-19b15b1ff2e2c42160f842a4750d19e7f3e3ad5a5ae93a70a0bbfd399963e7ef.png" alt="Logo login" />
+    </div>
+    <header class='main-header'>
+      <ul class='nav navbar-nav org-scope'>
+        <li class='dropdown org-selector'>
+          <a class='dropdown-toggle logo' data-toggle='dropdown' href='#' title='ID:  - Todas as organizações'>
+            <span class='logo-mini'>
+              <img height="24" src="https://assets.artia.com/assets/artia_icon-8993d8bfe21bd84c79ab48f3bdd0f20db5277f6de15f35f6277e6980f36846bc.png" alt="Artia icon" />
+              <span class='caret'></span>
+            </span>
+            <span class='logo-lg hidden-xs'>
+             
+              PGE
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <nav class='navbar navbar-static-top'>
+        <!--<a class='sidebar-toggle icon-list' data-toggle='offcanvas' href='#' role='button'>
+          <span class='sr-only icon-list'>
+            Treeview
+          </span>
+          <span class='icon-bar icon-list'></span>
+          <span class='icon-bar icon-list'></span>
+          <span class='icon-bar icon-list'></span>
+        </a>-->
+        <div class='collapse navbar-collapse pull-left topbar-menu' id='navbar-collapse'>
+          <ul class='nav navbar-nav action-menu hidden-sm hidden-xs'>
+            <li>
+              <a class='icon-calendar' href='telaGerenciamentoEstagiario.html' id='top_menu_myday' tabindex='1'>
+                Tela Inicial
+              </a>
+            </li>
+            <li>
+              <a href='telaRelatorios.html'>
+                Meu trabalho
+              </a>
+            </li>
+            <li class='dropdown menu_activities not-select-the-item'>
+              <a data-toggle='dropdown' id='top_menu_activities' tabindex='1'>
+                Atividades
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu dropdown-menu menu_activities' role='menu'>
+                <li>
+                  <a class='icon-point-list' href='#' id='top_menu_activities_list'>
+                    Lista de Atividades
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-play' href='#' id='top_menu_running'>
+                    Em Andamento
+                  </a>
+                </li>
+                <li class='divider'></li>
+                <!--<li>
+                  <a class='icon-clock' href='#' id='top_menu_time_entries'>
+                    Lista de Apontamentos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-fast-appointment' href='#' id='top_menu_fast_time_entries'>
+                    Apontamentos
+                  </a>
+                </li>-->
+                <li>
+                  <a class='icon-kanban' href='#' id='top_menu_kanban'>
+                    Kanban
+                  </a>
+                </li>
+                <!--<li class='divider'></li>
+                <li>
+                  <a class='icon-offline' href='#' id='top_menu_offline_time_entries'>
+                    Reporte Offline
+                  </a>
+                </li>
+                <li class='divider'></li>
+                <li>
+                  <a class='icon-gantt' href='#' id='top_menu_gantt'>
+                    Gantt
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-advanced-gantt' href='#' id='top_menu_gantt2'>
+                    Gantt Avançado
+                  </a>
+                </li>-->
+                <li class='divider'></li>
+                <li>
+                  <a class='icon-calendar' href='#' id='top_menu_schedule'>
+                    Agenda
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-team' href='#' id='top_menu_schedule_by_resource'>
+                    Alocação da Equipe
+                  </a>
+                </li>
+                <!--<li class='divider'></li>
+                <li>
+                  <a class='icon-xml' href='#' id='top_menu_xml_imports'>
+                    Importação XML
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-calc' href='#' id='top_menu_calculation'>
+                    Cálculo
+                  </a>
+                </li>-->
+              </ul>
+            </li>
+            <li class='dropdown menu_projects not-select-the-item'>
+              <a data-toggle='dropdown' id='top_menu_projects' tabindex='1'>
+                Quadros
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu dropdown-menu menu_projects' role='menu'>
+                <li>
+                  <a class='icon-point-list' href='#' id='top_menu_projects_list'>
+                    Lista de Quadros
+                  </a>
+                </li>
+                <li class='divider'></li>
+                <li>
+                  <a class='icon-dashboard' href='#' id='top_menu_status_report'>
+                    Relatório de Situação
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-deliverables-flag' href='#' id='top_menu_deliverables'>
+                    Acompanhamento de Entregas
+                  </a>
+                </li>
+                <!--<li class='divider'></li>
+                <li>
+                  <a class='icon-flag' href='#' id='top_menu_milestones'>
+                    Marcos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-alert' href='#' id='top_menu_risks'>
+                    Riscos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-duplicate' href='#' id='top_menu_project_templates'>
+                    Modelos
+                  </a>
+                </li>
+                <li class='divider'></li>
+                <li>
+                  <a class='icon-calc' href='#' id='top_menu_calculation'>
+                    Cálculo
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown menu_financial not-select-the-item'>
+            <a data-toggle='dropdown' id='top_menu_financial' tabindex='1'>
+            Financeiro
+            <span class='caret'></span>
+          </a>
+          <ul class='submenu dropdown-menu menu_financial' role='menu'>
+          <li>
+          <a class='icon-point-list' href='#' id='top_menu_finances_list'>
+          Lista de Lançamentos
+        </a>
+      </li>
+      <li class='divider'></li>
+      <li>
+      <a class='icon-dollar' href='#' id='top_menu_expenses'>
+      Reportes de Despesa
+    </a>
+  </li>
+  <li>
+  <a class='icon-checkbox-checked' href='#' id='top_menu_approvals'>
+  Aprovação
+  </a>
+  </li>
+  <li class='divider'></li>
+  <li>
+  <a class='icon-calc' href='#' id='top_menu_resource_calculation'>
+  Cálculo de Custos
+  </a>
+  </li>
+  </ul>
+  </li>-->
+  <!--<li class='dropdown menu_collaboration not-select-the-item'>
+  <a data-toggle='dropdown' id='top_menu_collaboration' tabindex='1'>
+    Colaboração
+    <span class='caret'></span>
+  </a>
+  <ul class='submenu dropdown-menu menu_collaboration' role='menu'>
+    <li>
+      <a class='icon-attach' href='#' id='top_menu_archives_list'>
+        Arquivos
+      </a>
+    </li>
+    <li>
+      <a class='icon-comment' href='#' id='top_menu_topics_list'>
+        Fórum
+      </a>
+    </li>
+    <li>
+      <a class='icon-book' href='#' id='top_menu_wiki_pages_list'>
+        Wiki
+      </a>
+    </li>
+  </ul>
+  </li>-->
+  <li class='dropdown hidden more not-select-the-item'>
+  <a data-toggle='dropdown' tabindex='1'>
+    + Mais
+    <span class='caret'></span>
+  </a>
+  <ul class='submenu dropdown-menu' role='menu'></ul>
+  </li>
+
+  </ul>
+  </div>
+  <div class='navbar-custom-menu user-actions-menus'>
+  <ul class='nav navbar-nav'>
+    <li class='dropdown search-menu'>
+      <a class='dropdown-toggle' data-toggle='dropdown' href='#' onclick='setTimeout(function(){$(".search-menu .search_input").focus()}, 100);'>
+        <i class='icon-search-1'></i>
+      </a>
+      <ul class='dropdown-menu col-md-8' id='search-dropdown'>
+        <li>
+          <form style='margin: 5px;'>
+            <input class='search_input form-control' placeholder='Digite sua busca e aguarde resultados' type='text'>
+          </form>
+          <ul class='list-unstyled search-items' id='result_search'></ul>
+        </li>
+      </ul>
+    </li>
+    <li class='dropdown notifications-menu'>
+      <a class='dropdown-toggle' data-toggle='dropdown' href='#' onclick='ehnoisActionBar.loadNotifications();'>
+        <i class='icon-bell'></i>
+        <span class='label label-alert' id='notification_counter' style='display: none'>
+          0
+        </span>
+      </a>
+      <ul class='dropdown-menu'>
+        <li>
+          <ul class='menu notification-items'></ul>
+          <div class='clear-all-notifications'>
+            <a href='#' onclick='ehnoisActionBar.updateAllNotice(); return false;'>
+              Limpar Todos
+            </a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class='dropdown user user-menu'>
+      <a alt='ID: 104731 - Michael Douglas' class='dropdown-toggle' data-toggle='dropdown' href='#' title='ID: 104731 - Michael Douglas'>
+        <img real_src="https://assets.artia.com/assets/blank-cc7e3ebd6e24b6d8a449dc8280f1ad677a7f03afe3cc974f4b45f0da1380af26.svg" class="load_image user-image" title="ID: 104731 - Michael Douglas" alt="ID: 104731 - Michael Douglas" src="https://assets.artia.com/assets/blank-cc7e3ebd6e24b6d8a449dc8280f1ad677a7f03afe3cc974f4b45f0da1380af26.svg" />
+        <span class='hidden-xs'>
+          Michael
+        </span>
+        <span class='caret'></span>
+        <span class='visible-xs'></span>
+      </a>
+      <ul class='dropdown-menu submenu menu_bar user_menu' role='menu'>
+        <li>
+          <a class='icon-widget' href='/users/edit'>
+            Configurações
+          </a>
+        </li>
+        <!--<li class='divider' role='separator'></li>
+        <li class='suppont_connection_active_or_desactive'>
+          <a class="allow_support_connection " actual_state="false" href="#" onclick="; return false;"></a>
+          <li>
+        </li>
+          <a target="_blank" href="/zendesk">Help Desk</a>
+        </li>-->
+        <li class='divider' role='separator'></li>
+        <li>
+          <a href="/users/logout">Sair</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </div>
+<script>
+$(".dropdown-header").on("click", function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+});
+</script>
+
+</nav>
+
+</header>
+<div class='treeview-resize'></div>
+<aside class='main-sidebar'>
+  <section class='sidebar'>
+    <ul class='nav nav-tabs hidden-lg hidden-md'>
+      <li class='active'>
+        <a aria-controls='home' data-toggle='tab' href='#treeview-tab' role='tab'>
+          Treeview
+        </a>
+      </li>
+      <li>
+        <a aria-controls='home' data-toggle='tab' href='#mobile-menu' role='tab'>
+          Menu
+        </a>
+      </li>
+    </ul>
+    <div class='tab-content'>
+      <div class='active tab-pane' id='treeview-tab'>
+        <div id='treeview' style='display:none;'>
+          <div class='upgrade-area'>
+            <a class="icon-arrow-up" href="#" onclick="ehnoisApplication.link_to_organization_plans_tab(51578); return false;">Faça um upgrade em seu plano</a>
+          </div>
+          <div class='select-all-orgs box_treeview' id='organization_51578'>
+            <div class='box_treeview_header box_treeview_header_open hascontextmenu organization parent_comunity scope-o51578' organization_id='51578' plan='trial' type='organization'>
+              <div class='options_button icon-more tvmb'></div>
+              <div class='icon-grid'></div>
+              <a type="organization" id="treeview_organization_51578::0::0" organization_id="51578" class="treeview_link" title="ID: 51578 - nemhum" href="#"><span class='hidden-xs hidden-sm'>Ver tudo</span>
+                <span class='hidden-md hidden-lg'>nemhum</span>
+              </a></div>
+            </div>
+            <div class='box_treeview' id='organization_51578'>
+              <ul blocked_by_ip='false' class='list_comunity treeview_organization_51578 list-unstyled' id='treeview' style=''>
+
+              </ul>
+            </div>
+            <div class='opcoes_treeview'>
+              <span class='relative_filters'>
+                <span>
+                  <a class="lk_filtro_opcoes icon-filter" id="filtro_2" href="#" onclick="; return false;"></a>
+                </span>
+                <div class='box_treeview_filters hideOnClickOut' id='box_filters_2' style='display: none;'>
+                  <span>
+                    Visualizar:
+                  </span>
+                  <span class='filter_close'>
+                    <label>
+                      <input checked='checked' class='filter2' id='filter_treeview' name='filter_treeview' type='checkbox' value='1'>
+                      Encerrada
+                    </label>
+                  </span>
+                  <button class='btn btn-primary filter_treeview_apply' filter='2' type='button'>
+                    Filtrar
+                  </button>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <script>
+        artiaTreeview.url = "/treeview/YTZmd3l4SmZ5NlA1S2N3TEtDM1QTZmd3.js?_=1535917012.8735294"
+        artiaTreeview.etag = "MTUzNTkxNjk3NS42OTM0ODc0"
+        var treeview = {};
+        var treeview = [];artiaTreeview.ajax = false;
+
+        $(function(){
+
+          var resize_treeview = ".main-sidebar, .list_comunity li, #treeview, .list_comunity .parent_active, #treeview ul.folders li div.hover_controls.active";
+          var resize_content  = ".content-wrapper, .right-side, .main-footer";
+
+          $(".treeview-resize").draggable({
+            axis: 'x',
+            delay: 0,
+            containment: 'document',
+            revert: false,
+            start: function(e) {},
+            drag: function(e){
+              $(resize_treeview).css("width", e.pageX);
+              $(resize_content).css("margin-left", e.pageX);
+            },
+            stop: function(e) {},
+          })
+        });
+        </script>
+
+        <div class='tab-pane' id='mobile-menu'>
+          <ul class='sidebar-menu'>
+            <li>
+              <a class='icon-calendar' href='#' id='top_menu_myday' tabindex='1'>
+                Meu trabalho
+              </a>
+            </li>
+            <li class='treeview menu_home not-select-the-item'>
+              <a data-toggle='treeview' id='top_menu_home' tabindex='1'>
+                Home
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu treeview-menu menu_home' role='menu'>
+                <li>
+                  <a class='icon-graph' href='#' id='top_menu_resume'>
+                    Resumo
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-chart' href='#' id='top_menu_dashboard'>
+                    Relatório Gerencial
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-chart-line' href='#' id='top_menu_dashboard_user'>
+                    Desempenho da Equipe
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-play' href='#' id='top_menu_running'>
+                    Em Andamento
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-podium' href='#' id='top_menu_ranking'>
+                    Ranking
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-feed' href='#' id='top_menu_timeline'>
+                    Timeline
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-widget' href='#' id='top_menu_edit'>
+                    Editar
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-trash' href='#' id='top_menu_trash'>
+                    Lixeira
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='treeview menu_activities not-select-the-item'>
+              <a data-toggle='treeview' id='top_menu_activities' tabindex='1'>
+                Atividades
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu treeview-menu menu_activities' role='menu'>
+                <li>
+                  <a class='icon-point-list' href='#' id='top_menu_activities_list'>
+                    Lista de Atividades
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-clock' href='#' id='top_menu_time_entries'>
+                    Lista de Apontamentos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-fast-appointment' href='#' id='top_menu_fast_time_entries'>
+                    Apontamentos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-kanban' href='#' id='top_menu_kanban'>
+                    Kanban
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-offline' href='#' id='top_menu_offline_time_entries'>
+                    Reporte Offline
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-gantt' href='#' id='top_menu_gantt'>
+                    Gantt
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-advanced-gantt' href='#' id='top_menu_gantt2'>
+                    Gantt Avançado
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-calendar' href='#' id='top_menu_schedule'>
+                    Agenda
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-team' href='#' id='top_menu_schedule_by_resource'>
+                    Alocação da Equipe
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-xml' href='#' id='top_menu_xml_imports'>
+                    Importação XML
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-calc' href='#' id='top_menu_calculation'>
+                    Cálculo
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='treeview menu_projects not-select-the-item'>
+              <a data-toggle='treeview' id='top_menu_projects' tabindex='1'>
+                Projetos
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu treeview-menu menu_projects' role='menu'>
+                <li>
+                  <a class='icon-point-list' href='#' id='top_menu_projects_list'>
+                    Lista de Projetos
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-dashboard' href='#' id='top_menu_status_report'>
+                    Relatório de Situação
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-deliverables-flag' href='#' id='top_menu_deliverables'>
+                    Acompanhamento de Entregas
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-flag' href='#' id='top_menu_milestones'>
+                    Marcos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-alert' href='#' id='top_menu_risks'>
+                    Riscos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-duplicate' href='#' id='top_menu_project_templates'>
+                    Modelos
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-calc' href='#' id='top_menu_calculation'>
+                    Cálculo
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='treeview menu_financial not-select-the-item'>
+              <a data-toggle='treeview' id='top_menu_financial' tabindex='1'>
+                Financeiro
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu treeview-menu menu_financial' role='menu'>
+                <li>
+                  <a class='icon-point-list' href='#' id='top_menu_finances_list'>
+                    Lista de Lançamentos
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-dollar' href='#' id='top_menu_expenses'>
+                    Reportes de Despesa
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-checkbox-checked' href='#' id='top_menu_approvals'>
+                    Aprovação
+                  </a>
+                </li>
+                <li class='mobile_divider'></li>
+                <li>
+                  <a class='icon-calc' href='#' id='top_menu_resource_calculation'>
+                    Cálculo de Custos
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='treeview menu_collaboration not-select-the-item'>
+              <a data-toggle='treeview' id='top_menu_collaboration' tabindex='1'>
+                Colaboração
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu treeview-menu menu_collaboration' role='menu'>
+                <li>
+                  <a class='icon-attach' href='#' id='top_menu_archives_list'>
+                    Arquivos
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-comment' href='#' id='top_menu_topics_list'>
+                    Fórum
+                  </a>
+                </li>
+                <li>
+                  <a class='icon-book' href='#' id='top_menu_wiki_pages_list'>
+                    Wiki
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown hidden more not-select-the-item'>
+              <a data-toggle='treeview' tabindex='1'>
+                + Mais
+                <span class='caret'></span>
+              </a>
+              <ul class='submenu dropdown-menu' role='menu'></ul>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </aside>
+  <div class='content-wrapper' id='content'>
+    <div class='hidden-xs hidden-sm' id='slider'>
+      <div class='tree_collapsed treeview-slider' data-collapsed='true' style='left:0;'>
+        <div style='height:50%;'></div>
+        <div class='icon-arrow-right'></div>
+        <div class='icon-arrow-left'></div>
+      </div>
+      <script>
+      artiaTreeview.start(104731);
+      </script>
+      <input type="hidden" name="filter_treeview_persist" id="filter_treeview_persist" value="true" />
+    </div>
+    <div id='flash-area'>
+
+    </div>
+    <section class='content'>
+      <script>
+      $("#trial-message, #trial-message-days").click(function(){
+        Artia.overlap.show({ ajax: true, url: "/trial_message?organization_id=" + (ehnoisApplication.currentOrganization || $(this).attr('org_id')) });
+      });
+      </script>
+
+      <br class='hidden-lg hidden-md'>
+      <div class='row breadcrumb-bar'>
+        <div class='object_label' style='margin-left: 15px'>
+          <h3 class='border_bottom f_left radius_border wiki_pages_title'>
+            Wiki
+          </h3>
+        </div>
+        <div class='fragment'>
+          <div class='bread_icon icon-home'></div>
+          <ul></ul>
+        </div>
+      </div>
+      <br class='hidden-lg hidden-md hidden-sm hidden-print'>
+
+      <script src="https://assets.artia.com/ckeditor/ckeditor.js"></script>
+      <link rel="stylesheet" media="screen" href="https://assets.artia.com/assets/artia/wiki-e5d88d7cad84b5db85b6df2952b2cd3d692a72f034e80dc6f34ad3ba48845220.css" />
+      <div id='body'>
+        <div id='filters' style='float:none;'>
+          <h2 class='title_content'>
+            Relatorio
+          </h2>
+        </div>
+        <div class='box box_white no_label_float'>
+            <div class='div-submit-loader'>
+              <button type="button" class="btn btn-primary" title="Salvar" onclick="verify_page(this)">Baixar Arquivo</button>
+              <button type="button" class="btn btn-default" title="Cancelar" onclick="window.location = &#39;../wiki&#39;;$(this).attr(&#39;disabled&#39;,&#39;false&#39;);return false;">Cancelar</button>
+              <div class='hidden_' id='post_loading' style='display: none;'>
+                <img src="https://assets.artia.com/assets/loader_blue-6a5b8134e9ba2a7d28f663a5780cf8da75792f66a1e4ab5b416effc2f912c102.gif" alt="Loader blue" />
+              </div>
+            </div>
+        </div>
+      </div>
+      <script>
+      $(document).ready(function() {
+        $("#wiki_page_title").focus();
+        var locale = I18n.getLocale();
+        if(locale == "pt"){locale = "pt-br";}
+        CKEDITOR.config.language = locale;
+        CKEDITOR.replace('wiki_page_page_content', { extraAllowedContent: 'img[!src,alt,width,height]{float};' });
+
+        CKEDITOR.on('dialogDefinition', function(ev) {
+          try {
+            var dialogName = ev.data.name;
+            var dialogDefinition = ev.data.definition;
+            if(dialogName == 'link') {
+              var informationTab = dialogDefinition.getContents('target');
+              var targetField = informationTab.get('linkTargetType');
+              targetField['default'] = '_parent';
+            }
+          } catch(exception) {
+          }
+        });
+
+      });
+
+      function verify_page(bt){
+        if($("#wiki_page_title").val() == ""){
+          ehnoisApplication.setMessage("error", I18n.t("wiki_empty_title_error"));
+          $("#wiki_page_title").addClass('red_border').focus();
+        }else{
+          $("#new_wiki_page").submit();
+          $(bt).attr('onclick', 'return false')
+        }
+      }
+
+      function manage_wiki_images(){
+        var position_y = (screen.height / 2) - 300;
+        var position_x = (screen.width / 2) - 425;
+
+        window.open('images/upload_image','Wiki','height=600,width=850,screenX='+String(position_x)+',screenY='+String(position_y));
+      }
+    </script>
+
+    <div id='miniplanner'></div>
+    <div class='help_box_wikipage help_box_anchor' id='help_box_wiki_pages_new' style='display: none;'></div>
+    <div id='help_box_button' style='display: none;'>
+      <div class='icon-lifebuoy'>
+        <div class='help_box_title'></div>
+      </div>
+    </div>
+    <div id='help_box' style='display: none;'>
+      <div class='help_box_title'></div>
+      <div class='help_box_html'></div>
+    </div>
+    <script>
+    // document.title = "";
+    document.title = document.title.gsub("&gt;", ">");
+
+    $('.user-menu img').attr('real_src', "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CiAgICAgIDxzdmcgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIj4KICAgICAgICA8cmVjdCBzdHlsZT0iZmlsbDojMDBCOEQ5IiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeD0iMCIgeT0iMCIgLz4KICAgICAgICA8dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB5PSI1MCUiIHg9IjUwJSIgZHk9IjAuMzVlbSIgcG9pbnRlci1ldmVudHM9ImF1dG8iIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJCbGlua01hY1N5c3RlbUZvbnQsIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBVYnVudHUsIFJvYm90bywgT3h5Z2VuLCBDYW50YXJlbGwsIEFyaWFsLCBzYW5zLXNlcmlmIiBzdHlsZT0iZm9udC13ZWlnaHQ6NTAwO2ZvbnQtc2l6ZToxM3B4O2ZpbGw6I2ZmZmZmZjtsZXR0ZXItc3BhY2luZzogLTAuMDVweDt0ZXh0LXNoYWRvdzogMXB4IDFweCAwIHJnYmEoMCwwLDAsMC4xMCk7Ij5NRDwvdGV4dD4KICAgICAgPC9zdmc+");
+
+    $(document).ready(function() {
+      $(".organizations_menu").css("max-height", ($(window).height()-100) + "px")
+      /* New float menu items */
+      ehnoisApplication.userId = 104731
+      ehnoisApplication.currentAccount = null
+      ehnoisApplication.currentFolder = null
+      ehnoisApplication.currentOrganization = 51578;
+      ehnoisApplication.object.type = 'WikiPage'
+      ehnoisApplication.object.id = 51578
+      ehnoisApplication.object.pluralType = 'wiki_pages'
+      ehnoisApplication.myspace_link = "/myspace/wiki"; /*Persistencia da tree_view*/
+      ehnoisApplication.search_link = "/organizations/51578/search"
+      ehnoisApplication.time_zone_offset = -10800;
+      ehnoisApplication.persist_treeview = true;
+      ehnoisApplication.persist_treeview_path = "/set_persist_filters";
+      ehnoisApplication.theme_in_use = "full";
+      ehnoisActionBar.pending_payments = [];
+      ehnoisActionBar.emails_pending = false;
+      ehnoisActionBar.allow_support_connection = false;
+      ehnoisActionBar.show_inactive_projects = "closed";
+      ehnoisTable.initialize();
+      ehnoisApplication.initialize();
+      artiaHelpBox.tips = {"action_bar":{"id":1,"title":"Barra de Ações","content":"Exibe atalho para as principais funcionalidades no Artia permitindo que você consulte rapidamente as informações exibindo os itens de acordo com o \"Projeto\", \"Pasta\" ou \"Comunidade\" selecionado(a).\r<br />\nExemplo: Visualize sua \"Lista de Atividades\" clicando no item \"Atividades\" em seguida opção \"Atividades\" novamente.\r<br />\n\r<br />\n<b>Meu dia:</b> Permite organizar Atividades e anotar rapidamente suas pendências.\r<br />\n","element":"action_bar","top_pos":20,"arrow_direction":"n"},"data_table":{"id":2,"title":"Listas de Dados","content":"Aqui você visualiza uma listagem de dados de acordo com a opção do \"Menu\" selecionada.","element":"data_table","top_pos":100,"arrow_direction":"s"},"treeview":{"id":3,"title":"Tree-View","content":"Este elemento serve para você criar uma estrutura para organizar suas informações em Organizações, Comunidades, Projetos e Pastas.\r<br />\n\r<br />\n<a href=\"http://helpdesk.artia.com/entries/20667681-tree-view\" target=\"_blank\">Para maiores informações clique aqui</a>","element":"treeview","top_pos":85,"arrow_direction":"w"},"gray_clear_box":{"id":4,"title":"Visões","content":"Através das \"Visões\" você pode visualizar sua lista de dados de acordo com a opção selecionada. \r<br />\nExemplo: Visualize \"Atividades\" pendentes agrupadas por categoria, para isso selecione a visão \"Em aberto por categoria\" localizada na “Lista de Atividades”.\r<br />\n","element":"gray_clear_box","top_pos":160,"arrow_direction":"n"},"action_icons":{"id":5,"title":"Ícones de Ações","content":"Execute ações sobre vários itens em uma única operação. \r<br />\nExemplo: Encerre 10 atividades de uma única vez, basta marcar o checkbox ao lado das \"Atividades\"  desejadas e clicar sobre a ação \"Encerrar\".\r<br />\n","element":"action_icons","top_pos":10,"arrow_direction":"n"},"":{"id":6,"title":"Projeto","content":"<br><b>Análise 1</b>: % Esforço Agregado > % Completo Atividades -> O Projeto está sendo executado com maior produtividade em relação ao planejado.\r<br />\n<br><b>Análise 2</b>: % Esforço Agregado > % Completo Estimado Calculado -> O Projeto está sendo executado dentro dos prazos estabelecidos nas Atividades.\r<br />\n<br><b>Análise 3</b>: Esforço Agregado > % ULB Completo Estimado Calculado -> O Projeto está sendo executado dentro dos prazos estabelecidos na Última Linha de Base das Atividades.\r<br />\n\r<br />\nAnálise 1: Esforço Agregado > Esforço Real Atividades -> O Projeto está sendo executado com maior produtividade em relação ao planejado.\r<br />\nAnálise 2: Esforço Agregado > Esforço Estimado Calculado -> O Projeto está sendo executado dentro dos prazos estabelecidos nas Atividades.\r<br />\nAnálise 3: Esforço Agregado > ULB Esforço Estimado Calculado -> O Projeto está sendo executado dentro dos prazos estabelecidos na Última Linha de Base das Atividades.","element":"","top_pos":null,"arrow_direction":""},"help_box_activities_calculation":{"id":7,"title":"Como utilizar o Cálculo","content":"<b>Ao utilizar o cálculo é possível Recalcular datas e informações referentes a Atividades, Projetos e Alocação de Equipe.</b> <b>Para saber mais,<a href='http://helpdesk.artia.com/entries/73874989-Como-utilizar-o-C%C3%A1lculo'> Clique aqui!</a></b> ","element":"help_box_activities_calculation","top_pos":null,"arrow_direction":""},"help_box_resource_calculations_index":{"id":8,"title":"Custos por Recursos","content":"<b>A funcionalidade de Custos por Recurso, realiza os Lançamentos Financeiros de acordo com os apontamentos realizados nas atividades e o custo informado para cada recurso.\r<br />\nPara saber mais, <a href='http://helpdesk.artia.com/entries/76194517-Custos-por-Recursos-'> Clique aqui!</a>\r<br />\n</b>","element":"help_box_resource_calculations_index","top_pos":null,"arrow_direction":""},"help_box_organizations_calculation":{"id":9,"title":"Como utilizar o Cálculo ","content":"<b>Ao utilizar o cálculo é possível Recalcular datas e informações referentes a Atividades, Projetos e Alocação de Equipe.</b> <b>Para saber mais,<a href='http://helpdesk.artia.com/entries/73874989-Como-utilizar-o-C%C3%A1lculo'> Clique aqui!</a></b> ","element":"help_box_organizations_calculation","top_pos":null,"arrow_direction":""},"help_box_schedule_by_resource":{"id":10,"title":"<b>Alocação de Equipe</b>","content":"<b>Entenda se a sua equipe está com um nível adequado de alocação, super ou sub alocada.\r<br />\n\r<br />\nVocê sabe realizar a gestão de Capacidade x Demanda?</b>\r<br />\n<br>\r<br />\n<a style=\"padding: 8px 20px;\" class=\"green-button\" href=\"http://helpdesk.artia.com/entries/62289027-Capacidade-x-Demanda\" target=\"_blank\"> Assista o vídeo aqui</a>","element":"help_box_schedule_by_resource","top_pos":null,"arrow_direction":""},"help_box_myday_index":{"id":11,"title":"<b>Meu Dia</b>","content":"<b>No Meu Dia você visualiza as atividades que pretende realizar hoje e prioriza as atividades dos colegas de equipe!<br>\r<br />\nVocê sabe como utilizar essa função?</b> <br> \r<br />\n<a style=\"padding: 8px 20px;\" class=\"green-button\" href=\"http://helpdesk.artia.com/entries/62289757-Meu-Dia-Como-melhorar-a-produtividade-da-equipe\" target=\"_blank\"> Assista o vídeo aqui</a> ","element":"help_box_myday_index","top_pos":null,"arrow_direction":""},"help_box_xml_imports_index":{"id":13,"title":"<b>Importação XML</b>","content":"<b>Importe cronogramas do MS-Project para o Artia!<br>\r<br />\n\r<br />\nVocê sabe como utilizar essa função?</b> <br> \r<br />\n<a style=\"padding: 8px 20px;\" class=\"green-button\" href=\"http://helpdesk.artia.com/entries/21739777-Importando-XML\" target=\"_blank\"> Assista o vídeo aqui</a> ","element":"help_box_xml_imports_index","top_pos":null,"arrow_direction":""},"help_box_projects_index":{"id":14,"title":"<b> Gestão de Portfólio </b>","content":"<b>No Portfólio de Projetos você tem a visão rápida e eficaz do desempenho dos Projetos da sua Empresa.\r<br />\nVocê sabe como conseguir realizar essa análise?\r<br />\n<br>\r<br />\n<a style=\"padding: 8px 20px;\" class=\"green-button\" href=\"http://helpdesk.artia.com/entries/62836686-Gest%C3%A3o-de-Portf%C3%B3lio\"> Assista o vídeo aqui</a>","element":"help_box_projects_index","top_pos":null,"arrow_direction":""},"help_box_wiki_pages_index":{"id":15,"title":"<b>Wiki</b>","content":"<b>Crie uma página para seus Projetos e Pastas de forma colaborativa!\r<br />\nCom a Wiki você pode inserir textos, imagens, tabelas, links e compartilhar com a sua equipe.\r<br />\nQuer saber mais? </b>\r<br />\n<br>\r<br />\n<a style=\"padding: 8px 20px;\" class=\"green-button\" href=\"http://helpdesk.artia.com/entries/67132007-Como-Utilizar-o-Wiki\"> Assista o vídeo aqui</a>","element":"help_box_wiki_pages_index","top_pos":null,"arrow_direction":""},"help_box_projects_status_report":{"id":17,"title":"Relatório de Situação","content":"<b>O Relatório de Situação do Artia, facilita a visualização do andamento dos projetos, onde você criar relatórios com gráficos personalizados para determinados períodos. \r<br />\nQuer saber mais? </b>\r<br />\n<br>\r<br />\n<a style=\"padding: 8px 20px;\" class=\"green-button\" href=\"http://helpdesk.artia.com/entries/61565259-Relat%C3%B3rio-de-Situa%C3%A7%C3%A3o-Status-Report-\"> Clique Aqui!</a>","element":"help_box_projects_status_report","top_pos":null,"arrow_direction":""},"help_box_organizations_ranking":{"id":18,"title":"Ranking","content":"<b>Uma funcionalidade para medir a Produtividade e Assertividade da Equipe por meio de <i>Gamification</i>. \r<br />\n</b> <b>Para saber mais,<a href='http://helpdesk.artia.com/hc/pt-br/articles/115003839123-Ranking'> Clique aqui!</a></b> ","element":"help_box_organizations_ranking","top_pos":null,"arrow_direction":""}}
+
+      //#TODO: Menu de escopo de organização rever
+      ehnoisApplication.organizations = [{"id":51578,"name":"nemhum"}]
+      $(ehnoisApplication.organizations).each(function(){$(".organizations_menu").append('<li><a href="/organizations/'+this.id+'/select_scope" title="ID: '+this.id+' - '+this.name+'"><i class="icon-world"></i> '+this.name+'</a></li>')});
+      $(".organizations_menu").append($("li.addorg"));
+      if ($(ehnoisApplication.organizations).size() == 1){ $(".select-all-org").hide(); }
+
+      if(ehnoisFilter.name == undefined){
+        ehnoisFilter.name = null;
+        ehnoisFilter.currentFilterOptions = {};
+        ehnoisFilter.initialize();
+      }
+      ehnoisTreeview.initialize();
+      ehnoisActionBar.breadcrumb_items = [{"name":"nemhum","title":"nemhum","url":"/organizations/51578/wiki"}]
+      ehnoisActionBar.breadcrumb();
+      artiaTreeview.openCurrent();
+
+      $('a#filtro_2').click(function(){
+        if($(this).hasClass('filtro_aberto')) {
+          $('.box_treeview_filters').hide();
+          $(this).removeClass('filtro_aberto');
+          return false;
+        } else {
+          $inviteLink = $(this);
+          $(this).parent().parent().find(".box_treeview_filters").showUntilClickOut({onClose: function(){$inviteLink.removeClass('filtro_aberto')}});
+          $inviteLink.addClass("filtro_aberto");
+          return false;
+        }
+      });
+      ehnoisApplication.setNotificationCount(0);
+
+      $('.search_all :input').blur();
+      artiaHelpBox.showButton();
+      ArtiaConpass.start({"name":"Michael Douglas","email":"md506378@gmail.com","custom_fields":{"id":104731,"locale":"pt","controller":"wiki_pages","controller_and_action":"wiki_pages_new","action":"new","wizard":"true","invited":"false","old":"false"}}, true);
+    });
+    jQuery.src_path = 'https://assets.artia.com/assets/jquery-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js'
+    jQuery.browser_src_path = 'https://assets.artia.com/assets/lib/jquery.browser-fa3b33d05c92c189887a642448481cab5e1987430046f9d18ab9809b02051992.js'
+    aplication_css_path = 'https://assets.artia.com/assets/application-02faecadde2d247c18d1e96d6361734d7583e7169e1b8c298a9b40fdfde5afde.css'
+    gantt_css_path = 'https://assets.artia.com/assets/gantt-ebe7ab07acf2e0b371e16323d78a6c6175e7f8a381bdf91dc5ee1d4730477f1d.css'
+
+    var counter = $(".user_menu .notice").size();
+    if(counter > 0){ $("#notification_user").html(counter).show(); }
+  </script>
+</section>
+<script type="text/javascript">$(document).ready(function(){ PrivatePub.sign({"server":"https://push.artia.com/artia","timestamp":1535917012901,"channel":"/notification/104731","signature":"f275ab57e5f60cc87cdf47cf40a94d9f5e1c8482"}); });</script>
+
+
+
+
+
+
+
+</div>
+<!-- Control Sidebar -->
+<aside class='control-sidebar control-sidebar-dark hidden-sm hidden-xs' id='slider-right'>
+  <div class='today-slider' data-collapsed='false' style='display:none;'>
+    <div style='height: 50%;'></div>
+    <div class='icon-arrow-right'></div>
+    <div class='icon-arrow-left'></div>
+  </div>
+  <div id='today-widget' style='display: none'>
+    <div class='today-loading'>
+      <img src="https://assets.artia.com/assets/loader_gray-56620de949e263a7acb69b28196bc102d7b696ec794cfda972374dd1a8f42483.gif" alt="Loader gray" />
+    </div>
+  </div>
+  <script>
+  if (artiaToday){
+    artiaToday.hide(0);
+  }
+  $('#slider-right').hide();
+</script>
+</aside>
+<!--
+Add the sidebar's background. This div must be placed
+immediately after the control sidebar
+-->
+<div class='control-sidebar-bg hidden-sm hidden-xs'></div>
+</div>
+</body>
+</html>

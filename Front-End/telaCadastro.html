@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+
+<meta content='pt' http-equiv='content-language'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type'>
+<meta content='pt' http-equiv='language' name='language'>
+<meta content='IE=100' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1d9d0dd4d2","applicationID":"2416771","transactionName":"cAxXFUYKXwhdRUwSUUcGFhJRCVU7SlIECEtHEVgVXQpd","queueTime":0,"applicationTime":1571,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAYDUFNQGwEEVVdVAAA="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta content='noindex,nofollow' name='robots'>
+<meta charset='UTF-8'>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+<link rel="stylesheet" media="screen, print" href="https://assets.artia.com/assets/login2-4ea5a1bbe535545531909e623ca1861b71094242ca9456790780ba2ac9c7d82e.css" />
+<script src="https://assets.artia.com/assets/login-8320d928afda6a0255fbcd2e0e6d85bb78719ae3bda80bf5cfb23de88b555afc.js"></script>
+<title>PGE</title>
+</head>
+<script>
+  $(function() {
+    artiaOrigin.setOrigin("");
+  });
+</script>
+
+<head>
+<script>
+  if (typeof(dataLayer) === 'undefined') {
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NC7PZ37');
+  }
+</script>
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="qqcvS7txh7QPj3LwW0GT9QjO6C7c5WCJ3ux7vcYthHdbgtqxBaFvqlpZdQ4O7xcWAuwvLVefs5lktATByo7+XQ==" />
+<meta content='#607D8B' name='theme-color'>
+</head>
+<body class='self_registration cn-site ' mobile=''>
+<noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-NC7PZ37' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+
+<script>
+  if (typeof(I18n) == 'undefined'){ I18n = {}; }
+  I18n.locale = "pt";
+</script>
+<div class='box-left'>
+<a class='logo_sign' href='/'>
+
+</a>
+<div class='testimonials'>
+<ul></ul>
+</div>
+</div>
+<div class='box-right'>
+<div class='bar'>
+<div class='flags'>
+
+</div>
+<div class='switcher'>
+<a class='' href='telaLogin.html'>Login</a>
+<a class='active' href='telaCadastro.html'>
+Cadastro
+</a>
+</div>
+</div>
+<script async='' defer='defer' src='https://www.google.com/recaptcha/api.js'></script>
+<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rvIECwSS8/Eu0Wtj8QTbi00aYqnjszvsz5rqLFdQ5ldf1/HxukIb73sHbJ2kql9oRzilqmjJ6Px1wpVQW/OcfQ==" /><input type="hidden" name="user[country]" id="user_country" />
+<input type="hidden" name="direct" id="direct" value="true" />
+<input type="hidden" name="form_type" id="form_type" value="self_registration" />
+<input type="hidden" name="user_id" id="user_id" />
+<div class='step step1 current-step' data-step='1'>
+<!-- .title Vamos criar sua conta -->
+
+<div class='form-group no-error'>
+<label>
+Nome
+<input placeholder="Seu nome completo" maxlength="60" size="60" type="text" name="user[name]" id="user_name" />
+<i class='validate icon-check'></i>
+</label>
+</div>
+<div class='form-group no-error'>
+<label>
+Email
+<input placeholder="Endereço de email" type="text" name="user[email]" id="user_email" />
+<i class='validate icon-check'></i>
+</label>
+</div>
+<div class='form-group'>
+<label>
+Senha
+<input html_bloc="false" placeholder="(minímo de 6 caracteres)" type="password" name="user[password]" id="user_password" />
+<i class='validate'></i>
+</label>
+</div>
+<div class='form-group'>
+<label>
+<!--  Telefone
+<input placeholder="Informe seu telefone" type="tel" name="user[business_phone]" id="user_business_phone" />
+<i class='validate'></i>
+</label>-->
+</div>
+<a class='registration-next-step button' type='button'>
+Próxima etapa
+</a>
+<a class="text-center signup-link" href="telaLogin.html">Já tem conta no Artia? <span>Você pode fazer login!</span></a>
+<div class='dots'>
+<!--<div class='signup-with'>
+<div class='label'>
+Entrar com:
+</div>
+<a title="Facebook" id="facebook" class="icon-facebook" href="/users/auth/facebook"><span>Facebook</span>
+</a><a title="Google" id="google" class="icon-google" href="/users/auth/google_oauth2"><span>Google</span>
+</a><a title="Linkedin" id="linkedin" class="icon-linkedin" href="/users/auth/linkedin"><span>Linkedin</span>
+</a></div>-->
+<div class='bottom'>
+<a class='icon-more-1' data-step='1' href='#' title='Primeiro passo'>
+<span>Você</span>
+</a>
+<a data-step='2' href='#' title='Segundo passo'>
+<span>Empresa</span>
+</a>
+</div>
+
+</div>
+
+</div>
+<div class='step step2 next-step' data-step='2'>
+<!-- .title Vamos montar a estrutura ideal para sua empresa -->
+<div class='form-group'>
+<label>
+Nome da sua Empresa
+<input id='organization_name' name='organization[name]' placeholder='Nome da empresa que você trabalha' type='text' value=''>
+<i class='validate'></i>
+</label>
+</div>
+<div class='form-group'>
+<label>
+Cargo
+<select name="user[job_title]" id="user_job_title"><option value="">Escolha...</option>
+<option value="independent">Autônomo</option>
+<option value="assistant_operational">Auxiliar / Operacional</option>
+<option value="ceo_president">CEO / Presidente</option>
+<option value="director_partner">Diretor / Sócio</option>
+<option value="student">Estudante / Estagiário</option>
+<option value="project_manager">Gerente de Projeto</option>
+<option value="management">Gerência</option>
+<option value="junior_trainee">Junior / Trainee</option>
+<option selected="selected" value="others">Outro</option>
+<option value="full">Pleno</option>
+<option value="teacher">Professor</option>
+<option value="supervision_coordination">Supervisão / Coordenação</option>
+<option value="senior">Sênior</option></select>
+<i class='validate'></i>
+</label>
+</div>
+<div class='form-group'>
+<label>
+Ramo de Atuação
+<select name="organization[business_line_id]" id="organization_business_line"><option value="">Escolha...</option>
+<option value="agribusiness">Agronegócio</option>
+<option value="food">Alimentos e Bebidas</option>
+<option value="public">Área Pública (Órgãos, Autarquias)</option>
+<option value="architecture">Arquitetura</option>
+<option value="associations">Associações e Entidades</option>
+<option value="communication">Comunicação (Rádio, TV, Jornais, Revistas)</option>
+<option value="commerce">Comércio e Varejo</option>
+<option value="civil_engineering">Construção Civil</option>
+<option value="consulting">Consultoria</option>
+<option value="accounting">Contabilidade</option>
+<option value="engineering">Engenharia</option>
+<option value="education">Ensino</option>
+<option value="financial">Financeiro</option>
+<option value="industry">Indústria</option>
+<option value="law">Jurídico</option>
+<option value="logistics">Logística</option>
+<option value="marketing">Marketing, Comunicação e Publicidade</option>
+<option value="environment">Meio Ambiente</option>
+<option value="health">Saúde, Clínicas, Laboratórios, Hospitais</option>
+<option value="service">Serviços</option>
+<option value="telecom">Telecom</option>
+<option value="textile">Têxtil</option>
+<option value="it">TI (Serviços e Produtos)</option>
+<option value="student">Estudante</option>
+<option value="others">Outro</option></select>
+<i class='validate'></i>
+</label>
+</div>
+<div class='form-group'>
+<label>
+Número de Colaboradores
+</label>
+<input class='slider-input' name='organization[number_employees]' type='hidden'>
+<i class='validate'></i>
+</div>
+<select class="hidden" name="user[locale]" id="user_locale"><option selected="selected" value="pt">Português</option>
+<option value="en">English</option>
+<option value="es">Español</option></select>
+<select class="hidden" name="user[time_zone]" id="user_time_zone"><option value="American Samoa">(GMT-11:00) American Samoa</option>
+<option value="International Date Line West">(GMT-11:00) International Date Line West</option>
+<option value="Midway Island">(GMT-11:00) Midway Island</option>
+<option value="Hawaii">(GMT-10:00) Hawaii</option>
+<option value="Alaska">(GMT-09:00) Alaska</option>
+<option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+<option value="Tijuana">(GMT-08:00) Tijuana</option>
+<option value="Arizona">(GMT-07:00) Arizona</option>
+<option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+<option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+<option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+<option value="Central America">(GMT-06:00) Central America</option>
+<option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
+<option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+<option value="Mexico City">(GMT-06:00) Mexico City</option>
+<option value="Monterrey">(GMT-06:00) Monterrey</option>
+<option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+<option value="Bogota">(GMT-05:00) Bogota</option>
+<option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+<option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+<option value="Lima">(GMT-05:00) Lima</option>
+<option value="Quito">(GMT-05:00) Quito</option>
+<option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
+<option value="Caracas">(GMT-04:00) Caracas</option>
+<option value="Georgetown">(GMT-04:00) Georgetown</option>
+<option value="La Paz">(GMT-04:00) La Paz</option>
+<option value="Santiago">(GMT-04:00) Santiago</option>
+<option value="Newfoundland">(GMT-03:30) Newfoundland</option>
+<option selected="selected" value="Brasilia">(GMT-03:00) Brasilia</option>
+<option value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
+<option value="Greenland">(GMT-03:00) Greenland</option>
+<option value="Montevideo">(GMT-03:00) Montevideo</option>
+<option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+<option value="Azores">(GMT-01:00) Azores</option>
+<option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+<option value="Casablanca">(GMT+00:00) Casablanca</option>
+<option value="Dublin">(GMT+00:00) Dublin</option>
+<option value="Edinburgh">(GMT+00:00) Edinburgh</option>
+<option value="Lisbon">(GMT+00:00) Lisbon</option>
+<option value="London">(GMT+00:00) London</option>
+<option value="Monrovia">(GMT+00:00) Monrovia</option>
+<option value="UTC">(GMT+00:00) UTC</option>
+<option value="Amsterdam">(GMT+01:00) Amsterdam</option>
+<option value="Belgrade">(GMT+01:00) Belgrade</option>
+<option value="Berlin">(GMT+01:00) Berlin</option>
+<option value="Bern">(GMT+01:00) Bern</option>
+<option value="Bratislava">(GMT+01:00) Bratislava</option>
+<option value="Brussels">(GMT+01:00) Brussels</option>
+<option value="Budapest">(GMT+01:00) Budapest</option>
+<option value="Copenhagen">(GMT+01:00) Copenhagen</option>
+<option value="Ljubljana">(GMT+01:00) Ljubljana</option>
+<option value="Madrid">(GMT+01:00) Madrid</option>
+<option value="Paris">(GMT+01:00) Paris</option>
+<option value="Prague">(GMT+01:00) Prague</option>
+<option value="Rome">(GMT+01:00) Rome</option>
+<option value="Sarajevo">(GMT+01:00) Sarajevo</option>
+<option value="Skopje">(GMT+01:00) Skopje</option>
+<option value="Stockholm">(GMT+01:00) Stockholm</option>
+<option value="Vienna">(GMT+01:00) Vienna</option>
+<option value="Warsaw">(GMT+01:00) Warsaw</option>
+<option value="West Central Africa">(GMT+01:00) West Central Africa</option>
+<option value="Zagreb">(GMT+01:00) Zagreb</option>
+<option value="Zurich">(GMT+01:00) Zurich</option>
+<option value="Athens">(GMT+02:00) Athens</option>
+<option value="Bucharest">(GMT+02:00) Bucharest</option>
+<option value="Cairo">(GMT+02:00) Cairo</option>
+<option value="Harare">(GMT+02:00) Harare</option>
+<option value="Helsinki">(GMT+02:00) Helsinki</option>
+<option value="Jerusalem">(GMT+02:00) Jerusalem</option>
+<option value="Kaliningrad">(GMT+02:00) Kaliningrad</option>
+<option value="Kyiv">(GMT+02:00) Kyiv</option>
+<option value="Pretoria">(GMT+02:00) Pretoria</option>
+<option value="Riga">(GMT+02:00) Riga</option>
+<option value="Sofia">(GMT+02:00) Sofia</option>
+<option value="Tallinn">(GMT+02:00) Tallinn</option>
+<option value="Vilnius">(GMT+02:00) Vilnius</option>
+<option value="Baghdad">(GMT+03:00) Baghdad</option>
+<option value="Istanbul">(GMT+03:00) Istanbul</option>
+<option value="Kuwait">(GMT+03:00) Kuwait</option>
+<option value="Minsk">(GMT+03:00) Minsk</option>
+<option value="Moscow">(GMT+03:00) Moscow</option>
+<option value="Nairobi">(GMT+03:00) Nairobi</option>
+<option value="Riyadh">(GMT+03:00) Riyadh</option>
+<option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
+<option value="Volgograd">(GMT+03:00) Volgograd</option>
+<option value="Tehran">(GMT+03:30) Tehran</option>
+<option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
+<option value="Baku">(GMT+04:00) Baku</option>
+<option value="Muscat">(GMT+04:00) Muscat</option>
+<option value="Samara">(GMT+04:00) Samara</option>
+<option value="Tbilisi">(GMT+04:00) Tbilisi</option>
+<option value="Yerevan">(GMT+04:00) Yerevan</option>
+<option value="Kabul">(GMT+04:30) Kabul</option>
+<option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
+<option value="Islamabad">(GMT+05:00) Islamabad</option>
+<option value="Karachi">(GMT+05:00) Karachi</option>
+<option value="Tashkent">(GMT+05:00) Tashkent</option>
+<option value="Chennai">(GMT+05:30) Chennai</option>
+<option value="Kolkata">(GMT+05:30) Kolkata</option>
+<option value="Mumbai">(GMT+05:30) Mumbai</option>
+<option value="New Delhi">(GMT+05:30) New Delhi</option>
+<option value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
+<option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+<option value="Almaty">(GMT+06:00) Almaty</option>
+<option value="Astana">(GMT+06:00) Astana</option>
+<option value="Dhaka">(GMT+06:00) Dhaka</option>
+<option value="Urumqi">(GMT+06:00) Urumqi</option>
+<option value="Rangoon">(GMT+06:30) Rangoon</option>
+<option value="Bangkok">(GMT+07:00) Bangkok</option>
+<option value="Hanoi">(GMT+07:00) Hanoi</option>
+<option value="Jakarta">(GMT+07:00) Jakarta</option>
+<option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+<option value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
+<option value="Beijing">(GMT+08:00) Beijing</option>
+<option value="Chongqing">(GMT+08:00) Chongqing</option>
+<option value="Hong Kong">(GMT+08:00) Hong Kong</option>
+<option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+<option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
+<option value="Perth">(GMT+08:00) Perth</option>
+<option value="Singapore">(GMT+08:00) Singapore</option>
+<option value="Taipei">(GMT+08:00) Taipei</option>
+<option value="Ulaanbaatar">(GMT+08:00) Ulaanbaatar</option>
+<option value="Osaka">(GMT+09:00) Osaka</option>
+<option value="Sapporo">(GMT+09:00) Sapporo</option>
+<option value="Seoul">(GMT+09:00) Seoul</option>
+<option value="Tokyo">(GMT+09:00) Tokyo</option>
+<option value="Yakutsk">(GMT+09:00) Yakutsk</option>
+<option value="Adelaide">(GMT+09:30) Adelaide</option>
+<option value="Darwin">(GMT+09:30) Darwin</option>
+<option value="Brisbane">(GMT+10:00) Brisbane</option>
+<option value="Canberra">(GMT+10:00) Canberra</option>
+<option value="Guam">(GMT+10:00) Guam</option>
+<option value="Hobart">(GMT+10:00) Hobart</option>
+<option value="Melbourne">(GMT+10:00) Melbourne</option>
+<option value="Port Moresby">(GMT+10:00) Port Moresby</option>
+<option value="Sydney">(GMT+10:00) Sydney</option>
+<option value="Vladivostok">(GMT+10:00) Vladivostok</option>
+<option value="Magadan">(GMT+11:00) Magadan</option>
+<option value="New Caledonia">(GMT+11:00) New Caledonia</option>
+<option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
+<option value="Srednekolymsk">(GMT+11:00) Srednekolymsk</option>
+<option value="Auckland">(GMT+12:00) Auckland</option>
+<option value="Fiji">(GMT+12:00) Fiji</option>
+<option value="Kamchatka">(GMT+12:00) Kamchatka</option>
+<option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
+<option value="Wellington">(GMT+12:00) Wellington</option>
+<option value="Chatham Is.">(GMT+12:45) Chatham Is.</option>
+<option value="Nuku&#39;alofa">(GMT+13:00) Nuku&#39;alofa</option>
+<option value="Samoa">(GMT+13:00) Samoa</option>
+<option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option></select>
+<input value="artia_" type="hidden" name="user[origin]" id="user_origin" />
+<div class='g-recaptcha' data-callback='submitForm' data-sitekey='6LehqzoUAAAAANvzx5IBAne1yucBSxX4DlLHWF6z' data-size='invisible' id='recaptcha'></div>
+<button id='submit-form' type='submit'>
+Crie meu usuário
+</button>
+<div class='text-center informations'>
+Ao se cadastrar, você concorda com nossos <a href='https://app.artia.com/terms_of_use?version=6' target='_blank'>termos de uso</a>.
+</div>
+<a class="text-center signup-link" href="/users/login">Já tem conta no Artia? <span>Você pode fazer login!</span></a>
+<div class='dots'>
+<div class='bottom'>
+<a class='icon-more-1' data-step='1' href='#' title='Primeiro passo'>
+<span>Você</span>
+</a>
+<a data-step='2' href='#' title='Segundo passo'>
+<span>Empresa</span>
+</a>
+</div>
+
+</div>
+</div>
+</form>
+<script>
+  var submitForm = function(token) {
+    ArtiaSign.showRocket();
+    $("#new_user").submit();
+  };
+
+  slider_width = $(".step2").width() - 50;
+  if($("body").attr("mobile") == "true")
+    slider_width = slider_width + 50;
+
+  var resize = function() {
+    slider_width = $(".step2").width() - 50;
+    if($("body").attr("mobile") == "true")
+      slider_width = slider_width + 50;
+    $(".slider-input").jRange("setWidth", slider_width);
+  };
+
+  $(function() {
+    ArtiaSign.initialize(true);
+
+    $(".slider-input").jRange({
+      from: 0,to: 5,
+      step: 1,
+      format: '%s',
+      showLabels: false, showScale: true,
+      width: slider_width,
+      snap: true,
+      scaleClicable: true,
+      scale: [I18n.t("_select"), "1 - 10", "11 - 30", "31 - 100", "101 - 500", "> 500"],
+      onstatechange: function(value) {
+        if (value > 0) localStorage.setItem('organization[number_employees]', value);
+      }
+    });
+
+    $(window).resize(function() {
+      resize();
+    });
+
+    // Informações que o usuário já preencheu se baixou algum conteúdo do site do artia
+    //if($.cookies.get("name")) $("#user_name").val($.cookies.get("name"));
+    //$("#user_email").val($.cookies.get("email"));
+    //if($.cookies.get("company")) $("#company_name").val($.cookies.get("company"));
+    if(true) {
+      ArtiaSign.loadInformation();
+      if ($("#user_business_phone").val() === "") $("#user_business_phone").val($.cookies.get("telefone"));
+      if ($("#organization_business_line").val() === "") $("#organization_business_line").val(ArtiaSign.fromToBusinessLine($.cookies.get("ocupation")));
+      if ($("#user_job_title").val() === "") $("#user_job_title").val(ArtiaSign.fromToJobTitle($.cookies.get("job_title")));
+      if ($(".slider-input").val() === '0') {
+        var string_employees = $.cookies.get("number_employees");
+        var number_employees = {null: "", "10": "1", "30": "2", "100": "3", "500": "4", "501": "5"};
+        $(".slider-input").jRange("setValue", number_employees[string_employees]);
+      }
+    } else ArtiaSign.highlightErrors('{"name":[],"email":[],"password":[],"business_phone":[],"job_title":[],"locale":[],"time_zone":[]}');
+
+    $('input#user_email').on('blur', function(event) {
+      $group = $(this).closest(".form-group");
+      $("<span/>", { class: "error" }).appendTo($group);
+      $span = $group.find("span");
+      $group.addClass("error-mailcheck");
+      $(this).mailcheck({
+        suggested: function(element, suggestion) {
+          $span.html(I18n.t("did_you_mean") + "&nbsp;<a class='email_suggestion_item'>" + suggestion.full + "</a>");
+          $(".email_suggestion_item").click(function(){
+            $("input#user_email").val($(".email_suggestion_item").text());
+            $span.html("");
+            $('input#user_email').trigger("blur");
+          });
+        },
+        empty: function(element) {
+          $span.html("");
+          $.each("googlemail.com yahoo.com google.com hotmail.com gmail.com mac.com live.com googlemail.com msn.com hotmail.co.uk yahoo.co.uk facebook.com mail.com outlook.com icloud.com terra.com.br terra.com me.com".split(" "), function(i, domain){
+            if ($('input#user_email').val().indexOf('@' + domain) >= 0) {
+              $span.html(I18n.t('unprofessional_email'));
+            }
+          });
+        }
+      });
+    });
+  });
+</script>
+<script>
+  $(function() {
+    var status = ""
+    if (status == 'invalid_email' || status=="email_already_in_use"){
+      $('form :text:first').addClass('red_border').focus();
+    } else if (status == 'confirm_resend_email' && confirm("Este e-mail já está registrado porém precisa ser confirmado. Deseja reenviar o e-mail de confirmação?")) {
+      $('form:first').append($('<input/>',{type:'hidden',name:'resend',value:'true'})).submit();
+    }
+    else if (status == 'resent' || status == 'sent') {
+      ehnoisApplication.setMessage('info', "O e-mail de confirmação foi enviado, acesse-o para continuar seu cadastro.");
+      setTimeout(function() { location.href = '/' }, 5000);
+    }
+  })
+</script>
+<script>
+  dataLayer.push({'event': 'RegistrationShow', event_category: 'Artiaproduction', event_label: 'No'});
+</script>
+
+</div>
+<div class='saving-user-data'>
+<span>
+Estamos preparando seu ambiente de trabalho 🚀
+</span>
+</div>
+</body>
+</html>
+<script>
+  document.title = "artia";
+  document.title = document.title.replace("&gt;",'>');
+
+  $(function() {
+    if($("body").hasClass("self_registration") || $("body").hasClass("activate_participant")) {
+      ArtiaSign.showTestimonials();
+    }
+  });
+</script>
